@@ -9,9 +9,9 @@
 
     <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Manrope:wght@300;500&display=swap" rel="stylesheet">
@@ -22,12 +22,17 @@
             <div>
                 <a href="index.html"><img class=logo src="assets/img/logo-isauhuh.svg" alt="Isabel Ugalde" height="50px"></img></a>
             </div>
-            <div>
+            <div class="topnav" id="myTopnav">
                 <nav>
                     <ul class="flex-space-between">
                         <li><a href="works.html">Works</a></li>
                         <li><a href="bio.html">Bio</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -36,62 +41,109 @@
             <span>Isabel Ugalde Honda</span>
         </div>
     </header>
-    <section id="banner-principal">
+    <section id="imagen-principal">
         <div class="banner-principal flex-space-between">
             <div>
-                <h1>Hi, I'm Isabel Ugalde<br> also known as Isa uh. <br><span>Welcome to my site</span></h1>
+                <h1 class="animate__animated animate__fadeInDown">Hi, I'm Isabel Ugalde<br> also known as Isa uh. <br></h1><h1 class="animate__animated animate__fadeInDown"><span>Welcome to my site</span></h1>
             </div>
             <div>
-                <img src="assets/img/img13.jpg" width="700vh">
+                <img class="animate__animated animate__fadeInRight" src="assets/img/img13.jpg">
             </div>
-        </div>
-    </section>
-    <section id="cards">
-        <div class="textbox">
-            <h2>Featured works</h2>
-            <p>These are some of the works I find most fun on doing.</p>
-        </div>
-    
-        <div>
-            <img src="assets/img/img13.png">
         </div>
     </section>
     <section id="gallery">
-            <div class="textbox">
-                <h2>Featured</h2>
+        <div class="textbox">
+            <h2>Experimental</h2>
                 <p>These are some of the works I find most fun on doing.</p>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <a href=specific-work.html><img src="assets/img/img01.webp"></a>
-                    <a href=specific-work.html><img src="assets/img/img02.jpg"></a>
-                    <a href=specific-work.html><img src="assets/img/img03.png"></a>
-                </div>
-                <div class="column">
-                    <a href=specific-work.html><img src="assets/img/img04.webp"></a>
-                    <a href=specific-work.html><img src="assets/img/img05.jpg"></a>
-                    <a href=specific-work.html><img src="assets/img/img06.jpg"></a>
-                </div>
-                <div class="column">
-                    <a href=specific-work.html><img src="assets/img/img07.png"></a>
-                    <a href=specific-work.html><img src="assets/img/img08.jpg"></a>
-                    <a href=specific-work.html><img src="assets/img/img09.jpg"></a>
-                </div>
-                <div class="column">
-                    <a href=specific-work.html><img src="assets/img/img10.jpg"></a>
-                    <a href=specific-work.html><img src="assets/img/img11.jpg"></a>
-                    <a href=specific-work.html><img src="assets/img/img12.jpg"></a>
-                </div>
-            </div>
-        
-        <div>
-            <img src="assets/img/img13.png">
         </div>
+        <div class="row">
+            <div class="column">
+                <div class=container>
+                    <img src="assets/img/25.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Malasaña Mayo</div></a>
+                    </div>
+                </div>
+                <div class=container>
+                    <img src="assets/img/img02.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">La Bestia</div></a>
+                    </div>
+                </div>
+                <div class=container>
+                    <img src="assets/img/img03.png">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Coffee costumer</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class=container>
+                    <img src="assets/img/img04.webp">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Chegukatsu</div></a>
+                    </div>
+                </div>
+                <div class=container>
+                    <img src="assets/img/img05.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Skeleton man</div></a>
+                    </div>
+                </div>
+                <div class=container>
+                    <img src="assets/img/img06.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">The amazon monster</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class=container>
+                    <img src="assets/img/img07.png">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Perdida en el fuego</div></a>
+                    </div>
+                </div> 
+                <div class=container>
+                    <img src="assets/img/img08.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Nuevocentro children's day</div></a>
+                    </div>
+                </div> 
+                <div class=container>
+                    <img src="assets/img/img09.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">La combi</div></a>
+                    </div>
+                </div> 
+            </div>
+            <div class="column">
+                <div class=container>
+                    <img src="assets/img/img10.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Castillo</div></a>
+                    </div>
+                </div> 
+                <div class=container>
+                    <img src="assets/img/img11.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Robot cafe</div></a>
+                    </div>
+                </div> 
+                <div class=container>
+                    <img src="assets/img/img12.jpg">
+                    <div class="overlay">
+                        <a href=specific-work.html><div class="text">Demon on tea time</div></a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
     </section>
     <footer>
-        <div class="flex-space-between">
+        <div class="grid-container">
             <div>
-                <p>ISABEL UGALDE HONDA</p>
+                <p class="left">ISABEL UGALDE HONDA</p>
             </div>
             <div>
                 <ul class="flex-space-between">
@@ -102,10 +154,21 @@
                 </ul>
             </div>
             <div>
-                <p>WORDS + IMAGES + CODE ©2022 ISA UH</p>
+                <p class="right">WORDS + IMAGES + CODE ©2022 ISA UH</p>
             </div>
         </div>
     </footer>  
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 </body>
 </html>

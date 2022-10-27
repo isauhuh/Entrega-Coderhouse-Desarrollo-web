@@ -20,12 +20,17 @@
             <div>
                 <a href="index.html"><img class=logo src="assets/img/logo-isauhuh.svg" alt="Isabel Ugalde" height="50px"></img></a>
             </div>
-            <div>
+            <div class="topnav" id="myTopnav">
                 <nav>
                     <ul class="flex-space-between">
                         <li><a href="works.html">Works</a></li>
                         <li><a href="bio.html">Bio</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -38,23 +43,26 @@
 
         <div class="flex-work">
             <div class="textbox">
-                <h2>Title of the project</h2>
+                <h2>Malasaña mayonese</h2>
             </div>
             <div>
                 <img src="assets/img/img13.png">
             </div>
-            <div class="textbox">
-            <h3>Overview</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quasi sequi eligendi eveniet assumenda velit tempora! A inventore soluta impedit dolor dolorum tenetur aliquid ab asperiores delectus, quae nobis id!
-                Inventore nesciunt est quod beatae. Nulla tempora explicabo, dignissimos veniam atque quis labore non porro. Hic blanditiis ex expedita suscipit, necessitatibus ut fuga nobis similique non, perspiciatis rem, rerum fugit!
-                Aliquid exercitationem iure maxime alias quae sit voluptate vel quam accusantium mollitia optio veritatis odio architecto voluptates labore, ratione impedit quisquam rerum recusandae. Optio consequatur voluptate vel tempora, quia necessitatibus?</p>
+            <div class="description">
+                <h3>Overview</h3>
+                <p>Foodie people enjoys food in combination of the right moment, right place, right company, product and creativity. In Argentina or in London, foodie people knows how to enjoy it with friends. You are the foodie and this is the mayonese.
+                    To know the world is to know where to eat. To find the true taste of the place you are is not obvious. Today the foodtrucks, the markets, the celebrations give us this cosmopolitan touch. The take away takes another dimension to be local and global at the same time.
             </div>
+            <div>
+                <img src="assets/img/14.jpg">
+            </div>
+
         </div>
     </section>
     <footer>
-        <div class="flex-space-between">
+        <div class="grid-container">
             <div>
-                <p>ISABEL UGALDE HONDA</p>
+                <p class="left">ISABEL UGALDE HONDA</p>
             </div>
             <div>
                 <ul class="flex-space-between">
@@ -65,9 +73,20 @@
                 </ul>
             </div>
             <div>
-                <p>WORDS + IMAGES + CODE ©2022 ISA UH</p>
+                <p class="right">WORDS + IMAGES + CODE ©2022 ISA UH</p>
             </div>
         </div>
-    </footer>
+    </footer>  
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>    
