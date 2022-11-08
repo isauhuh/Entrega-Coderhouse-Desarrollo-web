@@ -16,6 +16,7 @@ h1 {
 h1 span {
   font-weight: 200;
   color: #dd481d;
+  line-height: 55px;
 }
 
 h2 {
@@ -54,6 +55,13 @@ a {
 a:hover {
   color: #dd481d;
   border-color: #dd481d;
+}
+
+.card {
+  color: #eaf1e3;
+  background-color: #dd481d;
+  padding: 50px;
+  margin: 15px;
 }
 
 .grid-container {
@@ -369,17 +377,6 @@ input[type="submit"]:hover {
   background-color: #dd481d;
   padding: 50px;
 }
-
-#services .card {
-  display: grid;
-  column-gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: auto;
-  height: 50vh;
-  background-color: #313632;
-
-}
-
 
 
 .description {
