@@ -416,14 +416,6 @@ input[type="submit"]:hover {
     max-width: 100%;
   }
 
-  h1 {
-    font-family: "Dela Gothic One", sans-serif;
-    font-size: 55px;
-    line-height: 60px;
-    padding-bottom: 8px;
-    font-weight: 200;
-  }
-
   h2 {
     font-family: "Dela Gothic One", sans-serif;
     font-size: 30px;
