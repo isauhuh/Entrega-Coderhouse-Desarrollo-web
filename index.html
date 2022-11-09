@@ -18,63 +18,38 @@
 </head>
 <body>
     <header>
-        <div class="flex-space-between">
-            <div>
-                <a href="index.html"><img class=logo src="assets/img/logo-isauhuh.svg" alt="Isabel Ugalde" height="50px"></img></a>
+        <nav class="autohide navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="navbar-brand"><img class=logo src="assets/img/logo-isauhuh.svg" alt="Isabel Ugalde" height="60px"></img></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="works.html" class="nav-link">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bio.html" class="nav-link">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="topnav" id="myTopnav">
-                <nav>
-                    <ul class="flex-space-between">
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="bio.html">Bio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="center-logo">
-            <span>Isabel Ugalde Honda</span>
-        </div>
+          </nav>
     </header>
     <section id="imagen-principal">
         <div class="banner-principal flex-space-between">
             <div>
-                <h1 class="animate__animated animate__fadeInDown">Hi, I'm Isabel Ugalde<br> also known as Isa uh. <br></h1><h1 class="animate__animated animate__fadeInDown"><span>Welcome to my site</span></h1>
+                <h1 class="animate__animated animate__fadeInDown">Hi, I'm Isabel Ugalde<br> also known as Isa uh. <br><span>Welcome to my site</span></h1>
             </div>
             <div>
                 <img class="animate__animated animate__fadeInRight" src="assets/img/img13.jpg">
             </div>
         </div>
-    </section>
-    <section id="cards" class="container">
-        <div class="row">
-            <div class="card text-white col-sm col-md-">
-                <div>
-                <h5 class="card-title">Illustration</h5>
-                </div>
-            </div>
-            <div class="card text-white col-sm col-md">
-                <div>
-                <h5 class="card-title">Design</h5>
-                </div>
-            </div>
-            <div class="card text-white col-sm col-md">
-                <div>
-                <h5 class="card-title">UI design</h5>
-                </div>
-            </div>
-            <div class="card text-white col-sm col-md">
-                <div>
-                <h5 class="card-title">Animation</h5>
-                </div>
-            </div>
-        </div>
-
     </section>
     <section id="gallery">
         <div class="textbox">
@@ -84,7 +59,7 @@
         <div class="row">
             <div class="column">
                 <div class=container>
-                    <img src="assets/img/25.jpg">
+                    <img src="assets/img/img01.png">
                     <div class="overlay">
                         <a href=specific-work.html><div class="text">Malasaña Mayo</div></a>
                     </div>
@@ -163,7 +138,37 @@
                 </div> 
             </div>
         </div>
-        
+    </section>
+    <section id="cards">
+        <div class="textbox">
+            <h2>Client work</h2>
+                <p>Works commisioned by clients. More commercial and real world applied.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card text-white col-sm col-md-6 col-lg">
+                    <div>
+                    <h5 class="card-title">Illustration</h5>
+                    </div>
+                </div>
+                <div class="card text-white col-sm col-md-6 col-lg">
+                    <div>
+                    <h5 class="card-title">Design</h5>
+                    </div>
+                </div>
+                <div class="card text-white col-sm col-md-6 col-lg">
+                    <div>
+                    <h5 class="card-title">UI design</h5>
+                    </div>
+                </div>
+                <div class="card text-white col-sm col-md-6 col-lg">
+                    <div>
+                    <h5 class="card-title">Animation</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     <footer>
         <div class="grid-container">
@@ -194,6 +199,43 @@ function myFunction() {
   }
 }
 </script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		el_autohide = document.querySelector('.autohide');
+		
+		// add padding-top to bady (if necessary)
+		navbar_height = document.querySelector('.navbar').offsetHeight;
+		document.body.style.paddingTop = navbar_height + 'px';
+
+		if(el_autohide){
+			
+			var last_scroll_top = 0;
+			window.addEventListener('scroll', function() {
+	       		let scroll_top = window.scrollY;
+		       if(scroll_top < last_scroll_top) {
+		            el_autohide.classList.remove('scrolled-down');
+		            el_autohide.classList.add('scrolled-up');
+		        }
+		        else {
+		            el_autohide.classList.remove('scrolled-up');
+		            el_autohide.classList.add('scrolled-down');
+		        }
+		        last_scroll_top = scroll_top;
+
+			}); 
+			// window.addEventListener
+
+		}
+		// if
+		
+	}); 
+	// DOMContentLoaded  end
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 </body>
 </html>

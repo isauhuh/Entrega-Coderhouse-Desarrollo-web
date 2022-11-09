@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isabel Ugalde Honda | Graphic Designer </title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,34 +18,35 @@
 </head>
 <body>
     <header>
-        <div class="flex-space-between">
-            <div>
-                <a href="index.html"><img class=logo src="assets/img/logo-isauhuh.svg" alt="Isabel Ugalde" height="50px"></img></a>
+        <nav class="autohide navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="navbar-brand"><img class=logo src="assets/img/logo-isauhuh.svg" alt="Isabel Ugalde" height="60px"></img></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="works.html" class="nav-link">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bio.html" class="nav-link">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="topnav" id="myTopnav">
-                <nav>
-                    <ul class="flex-space-between">
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="bio.html">Bio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="center-logo">
-            <span>Isabel Ugalde Honda</span>
-        </div>
+          </nav>
     </header>
 
     <section id="gallery">
         <div class="textbox animate__animated animate__fadeInUp">
             <h2>Some of my work</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil alias amet. Quasi velit, unde repellendus et rerum atque, dolorum nihil pariatur accusantium, iste aut excepturi in dignissimos harum odit?</p>
+            <p>These are some of the work I do, mixed between real world designs and experimental. I enjoy doing both of these work but as you can see, the experimental one are the most interesting ones.</p>
+            <p>You can navigate throught theses labels to see them in order. </p>
         </div>
         <div class="textbox flex-space-around animate__animated animate__fadeInUp">
             <a href=works.html><span>illustration</span></a>

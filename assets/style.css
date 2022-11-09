@@ -6,18 +6,17 @@
 
 h1 {
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 65px;
-  line-height: 80px;
+  font-size: 70px;
+  line-height: 78px;
   padding-bottom: 8px;
   font-weight: 200;
-  /* text-transform: uppercase; */
 }
 
 h1 span {
   font-weight: 200;
   color: #dd481d;
-  line-height: 55px;
 }
+
 
 h2 {
   font-family: "Dela Gothic One", sans-serif;
@@ -69,6 +68,22 @@ a:hover {
   column-gap: 8px;
   grid-template-columns: 1fr 1fr 1fr;
   width: auto;
+  align-items: center;
+}
+
+.autohide {
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.scrolled-down {
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 
 .right {
@@ -84,6 +99,7 @@ a:hover {
   text-align: center;
   margin: auto;
   width: 70vw;
+  z-index: 5;
 }
 
 .textbox span {
@@ -94,7 +110,7 @@ a:hover {
   font-size: 18px;
   letter-spacing: 2px;
   margin: 0px;
-  line-height: 40px;
+  line-height: 55px;
 }
 
 .textbox h2 {
@@ -113,6 +129,15 @@ body {
 
 .topnav .icon {
   display: none;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 0rem;
 }
 
 .center-logo {
@@ -176,7 +201,6 @@ body {
   right: 0px;
 }
 
-
 section {
   margin-top: 80px;
 }
@@ -186,38 +210,29 @@ ul {
 }
 
 ul li {
-  float: none;
+  /* float: none; */
   list-style: none;
 }
 
-li {
-  float: none;
-}
-
-li a {
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  padding: 0px 20px;
-  color: #313632;
-}
-
 header {
-  padding: 10px;
-  position: fixed;
+  /* padding: 10px; */
   width: 100%;
-  top: 0;
-  left: 0;
-  text-align: center;
   z-index: 4;
-  /* background-color: #eaf1e3; */
+  background-color: #eaf1e3;
+  height: 100%;
 }
 
 header span {
   letter-spacing: 1px;
-  display: inline-block;
-  border-bottom: 4px solid #dd481d;
+  /* display: inline-block; */
+  line-height: 35px;
 }
+
+header li {
+  padding: 10px 30px;
+  text-align: center;
+}
+
 .banner-principal {
   padding: 100px 50px 100px 50px;
   max-width: 100vw;
@@ -252,7 +267,6 @@ img {
   width: 100%;
 }
 
-
 .column img {
   /* margin-top: 8px; */
   padding-top: 8px;
@@ -262,24 +276,24 @@ img {
 
 /* FOOTER */
 footer {
-  background-color: #dd481d;
+  /* background-color: #dd481d; */
   bottom: 0;
   width: 100%;
-  padding: 60px 20px;
-  color: white;
+  padding: 15vh 20px 30px 20px;
+  color: #313632;
 }
 
 footer p {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 2px;
 }
 
 footer a {
-  color: white;
+  color: #313632;
 }
 
 footer a:hover {
-  color: #313632;
+  color: #dd481d;
 }
 
 .footer-section {
@@ -317,8 +331,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #313632;
 }
-
-
 
 /*Image overlay*/
 .container {
@@ -388,7 +400,6 @@ input[type="submit"]:hover {
 }
 
 /*Animation*/
-
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -404,29 +415,21 @@ input[type="submit"]:hover {
     flex: 100%;
     max-width: 100%;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .topnav a {
-    display: none;
-  }
-  .center-logo {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-    transition: transform 0.3s;
-    animation-delay: 0.5s;
-  }
 
   h1 {
     font-family: "Dela Gothic One", sans-serif;
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 55px;
+    line-height: 60px;
     padding-bottom: 8px;
     font-weight: 200;
-    /* text-transform: uppercase; */
+  }
+
+  h2 {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 12px;
+    font-weight: 200;
   }
 
   .banner-principal {
@@ -437,19 +440,7 @@ input[type="submit"]:hover {
   #imagen-principal img {
     width: 100%;
     height: auto;
-  }
-
-  
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    right: 0;
-    top: 0;
-    transform: rotate(90deg);
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
+    position: relative;
   }
 
   .grid-container .flex-space-between {
@@ -470,3 +461,5 @@ input[type="submit"]:hover {
     text-align: center;
   }
 }
+
+
