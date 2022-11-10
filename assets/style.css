@@ -438,7 +438,6 @@ img {
     border-radius: 50px;
     right: 0px; }
 
-<<<<<<< HEAD
 .card {
   color: #eaf1e3;
   background-color: #dd481d;
@@ -483,67 +482,3 @@ img {
     width: auto; }
   .grid-container p {
     text-align: center; } }
-=======
-h1 {
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 7vh;
-  line-height: 7.4vh;
-  padding-bottom: 8px;
-  font-weight: 200; }
-  h1 span {
-    font-weight: 200;
-    color: #dd481d; }
-
-h2 {
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 40px;
-  line-height: 40px;
-  padding-bottom: 12px;
-  font-weight: 200; }
-
-h3 {
-  font-family: "Manrope", sans-serif;
-  font-size: 21px;
-  padding: 20px 0px;
-  font-weight: 600; }
-
-h4 {
-  font-family: "Manrope", sans-serif;
-  font-size: 12px;
-  padding: 12px 0px; }
-
-p {
-  font-family: "Manrope", sans-serif;
-  font-size: 21px;
-  padding: 20px 0px; }
-
-a {
-  text-decoration: none;
-  color: #313632; }
-  a:hover {
-    color: #dd481d;
-    border-color: #dd481d; }
-
-.textbox {
-  padding: 10px 0px 40px 0px;
-  text-align: center;
-  margin: auto;
-  width: 70vw;
-  z-index: 5; }
-  .textbox span {
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1.5px;
-    padding: 0px 18px 4px 18px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin: 0px;
-    line-height: 55px; }
-  .textbox h2 {
-    padding: 100px 50px 20px 50px; }
-
-ul {
-  list-style: none; }
-  ul li {
-    list-style: none; }
->>>>>>> agrego-seo
