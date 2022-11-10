@@ -1,0 +1,27 @@
+// Header
+header {
+    width: 100%;
+    z-index: 4;
+    background-color: $color-tertiary;
+    height: 100%;
+    span {
+      letter-spacing: 1px;
+      line-height: 35px;
+    }
+    li {
+      padding: 10px 30px;
+      text-align: center;
+    }
+  }
+
+.topnav .icon {
+    display: none;
+  }
+  
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 0px;
+    border-radius: 0rem;
+  }

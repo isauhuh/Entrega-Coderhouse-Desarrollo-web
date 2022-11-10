@@ -1,0 +1,50 @@
+// Footer
+
+footer {
+  bottom: 0;
+  width: 100%;
+  padding: 15vh 20px 30px 20px;
+  color: $color-secondary;
+  p {
+      font-size: 12px;
+      letter-spacing: 2px;
+  }
+  a {
+      color: $color-secondary;
+  
+    &:hover {
+        color: $color-primary;
+      }
+  }
+}
+
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-content: center;
+  margin: 0px;
+}
+
+ 
+
+  
+
+// Navbar hide scroll
+.autohide {
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.scrolled-down {
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+  

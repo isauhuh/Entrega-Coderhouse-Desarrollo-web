@@ -1,0 +1,75 @@
+@import 'utilities/variables';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/form';
+@import 'layout/grid';
+@import 'layout/navigation';
+@import 'componements/flexbox';
+@import 'base/text';
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+   
+
+  /*Animation*/
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  
+    h2 {
+      font-family: $font-primary;
+      font-size: 30px;
+      line-height: 30px;
+      padding-bottom: 12px;
+      font-weight: 200;
+    }
+  
+    .banner-principal {
+      padding: 15px 50px 100px 50px;
+      max-width: 100vw;
+    }
+  
+    #imagen-principal img {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .grid-container .flex-space-between {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .grid-container {
+      display: grid;
+      column-gap: 0px;
+      grid-template-columns: 1fr;
+      width: auto;
+    }
+    
+    .grid-container p {
+      text-align: center;
+    }
+  }
+  
+  
+  

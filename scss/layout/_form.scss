@@ -1,0 +1,25 @@
+// Form
+input[type="text"],
+select,
+textarea {
+  border: none;
+  background-color: $color-tertiary;
+  padding: 15px;
+  width: 100%;
+  border-bottom: 2px solid $color-primary;
+  margin: 15px 0px;
+  font-family: $font-secondary;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  background-color: $color-primary;
+  color: $color-tertiary;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: $font-secondary;
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
