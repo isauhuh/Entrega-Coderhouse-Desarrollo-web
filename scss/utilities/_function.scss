@@ -1,13 +1,3 @@
-@import 'utilities/variables';
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/form';
-@import 'layout/grid';
-@import 'layout/navigation';
-@import 'componements/flexbox';
-@import 'base/text';
-
-
   /*Animation*/
   @keyframes aparecer {
     0% {
@@ -62,6 +52,3 @@
       text-align: center;
     }
   }
-  
-  
-  
