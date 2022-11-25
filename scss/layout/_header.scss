@@ -2,7 +2,6 @@
 header {
     width: 100%;
     z-index: 4;
-    background-color: $color-tertiary;
     height: 100%;
     span {
       letter-spacing: 1px;
@@ -12,11 +11,25 @@ header {
       padding: 10px 30px;
       text-align: center;
     }
+    img {
+      height: 60px;
+      top: 0px;
+    }
   }
 
-.topnav .icon {
+.topnav {
+  .icon {
     display: none;
+    }
   }
+
+.navbar {
+  top: 0;
+  li {
+    color: $color-secondary;
+  }
+}
+
   
 .navbar-toggler {
     padding: 0.25rem 0.75rem;

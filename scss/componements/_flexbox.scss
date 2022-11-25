@@ -27,8 +27,21 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
+
+.flex-overview {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: flex-start;
+  height: 100%;
+  padding: 20px 50px 100px 50px;
+  h3 {
+    padding: 20px 0px 0px 0px;
+  }
+}
   
 .flex-about {
     display: flex;
@@ -37,14 +50,16 @@
     justify-content:space-around;
     align-items: flex-start;
     height: 100%;
-    padding: 100px 50px 100px 50px;
+    padding: 20px 50px 100px 50px;
 
     div {
-        width: 700px;
+        width: 40vw;
         padding: 50px 0px;
     }
     img {
         border-radius: 50px;
-        right: 0px;
+        right: 0;
+        width: 100%;
+        left: auto;
     }
 }

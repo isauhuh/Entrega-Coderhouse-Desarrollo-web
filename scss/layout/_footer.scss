@@ -5,6 +5,7 @@ footer {
   width: 100%;
   padding: 15vh 20px 30px 20px;
   color: $color-secondary;
+  border:1px;
   p {
       font-size: 12px;
       letter-spacing: 2px;
@@ -27,9 +28,6 @@ footer {
   margin: 0px;
 }
 
- 
-
-  
 
 // Navbar hide scroll
 .autohide {

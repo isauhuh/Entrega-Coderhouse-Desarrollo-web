@@ -13,9 +13,10 @@ textarea {
 }
 
 input[type="submit"] {
+  border-radius: 50px;
+  padding: 10px 38px 14px 38px;
   background-color: $color-primary;
   color: $color-tertiary;
-  padding: 12px 20px;
   border: none;
   cursor: pointer;
   font-family: $font-secondary;

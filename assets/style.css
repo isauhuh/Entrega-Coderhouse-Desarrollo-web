@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
 /*Animation*/
 @keyframes aparecer {
   0% {
@@ -5,47 +10,10 @@
   100% {
     opacity: 1; } }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
-  .column {
-    flex: 100%;
-    max-width: 100%; }
-  h2 {
-    font-family: "Dela Gothic One", sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    padding-bottom: 12px;
-    font-weight: 200; }
-  .banner-principal {
-    padding: 15px 50px 100px 50px;
-    max-width: 100vw; }
-  #imagen-principal img {
-    width: 100%;
-    height: auto;
-    position: relative; }
-  .grid-container .flex-space-between {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .grid-container {
-    display: grid;
-    column-gap: 0px;
-    grid-template-columns: 1fr;
-    width: auto; }
-  .grid-container p {
-    text-align: center; } }
-
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box; }
-
 h1 {
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 7vh;
-  line-height: 7.4vh;
+  font-size: 7.3vh;
+  line-height: 7.8vh;
   padding-bottom: 8px;
   font-weight: 200; }
   h1 span {
@@ -54,14 +22,14 @@ h1 {
 
 h2 {
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 4.5vh;
+  line-height: 5vh;
   padding-bottom: 12px;
   font-weight: 200; }
 
 h3 {
   font-family: "Manrope", sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   padding: 20px 0px;
   font-weight: 600; }
 
@@ -80,25 +48,11 @@ a {
   color: #313632; }
   a:hover {
     color: #dd481d;
-    border-color: #dd481d; }
-
-.textbox {
-  padding: 10px 0px 40px 0px;
-  text-align: center;
-  margin: auto;
-  width: 70vw;
-  z-index: 5; }
-  .textbox span {
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1.5px;
-    padding: 0px 18px 4px 18px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin: 0px;
-    line-height: 55px; }
-  .textbox h2 {
-    padding: 100px 50px 20px 50px; }
+    border-color: #dd481d;
+    text-decoration: none; }
+  a:active {
+    border-color: #dd481d;
+    border-bottom: 5px; }
 
 ul {
   list-style: none; }
@@ -106,7 +60,7 @@ ul {
     list-style: none; }
 
 body {
-  background-color: #eaf1e3;
+  background-color: #e7dbd4;
   color: #313632;
   display: flex;
   flex-direction: column;
@@ -114,17 +68,17 @@ body {
   font-size: 21px;
   padding: 0px; }
 
-section {
-  margin-top: 80px; }
-
 .left {
   text-align: left; }
 
 .right {
   text-align: right; }
 
+.vw50 {
+  width: 50vw; }
+
 .banner-principal {
-  padding: 100px 50px 100px 50px;
+  padding: 0px 80px 100px 80px;
   max-width: 100vw;
   height: 100vh;
   background-position: center;
@@ -139,7 +93,7 @@ section {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px; }
+  padding: 4px 0px; }
 
 .description {
   padding: 150px 0px 150px 0px;
@@ -147,22 +101,27 @@ section {
   margin: auto;
   width: 70vw; }
 
+.inner-content {
+  margin: 100px 80px 0px 80px; }
+
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 33%;
+  max-width: 33%;
   padding: 0 4px; }
   .column img {
-    padding-top: 8px;
     vertical-align: middle;
     width: 100%; }
 
 img {
+  z-index: -1;
+  margin-top: 8px;
   width: 100%; }
 
 /*Image overlay*/
 .container {
-  position: relative; }
+  position: relative;
+  padding: 0%; }
   .container:hover .overlay {
     opacity: 1; }
 
@@ -171,7 +130,7 @@ img {
 
 .overlay {
   position: absolute;
-  top: 0;
+  top: 0px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -182,10 +141,11 @@ img {
   background-color: #dd481d;
   margin-top: 0px;
   font-family: "Dela Gothic One", sans-serif;
+  font-size: 6vh;
   line-height: 1.6rem; }
 
 .text {
-  color: #eaf1e3;
+  color: #e7dbd4;
   font-family: inherit;
   font-size: 20px;
   position: absolute;
@@ -196,21 +156,32 @@ img {
 
 /*Ids */
 #gallery {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 #imagen-principal img {
-  height: 90vh;
-  width: auto; }
+  width: auto;
+  height: 85vh;
+  position: relative; }
 
 #services {
   background-color: #dd481d;
   padding: 50px; }
 
+#lab-section {
+  background-color: #ffffff;
+  color: #313632; }
+  #lab-section #gallery {
+    margin-left: 80px;
+    margin-right: 80px; }
+
 footer {
   bottom: 0;
   width: 100%;
   padding: 15vh 20px 30px 20px;
-  color: #313632; }
+  color: #313632;
+  border: 1px; }
   footer p {
     font-size: 12px;
     letter-spacing: 2px; }
@@ -246,7 +217,6 @@ footer {
 header {
   width: 100%;
   z-index: 4;
-  background-color: #eaf1e3;
   height: 100%; }
   header span {
     letter-spacing: 1px;
@@ -254,9 +224,17 @@ header {
   header li {
     padding: 10px 30px;
     text-align: center; }
+  header img {
+    height: 60px;
+    top: 0px; }
 
 .topnav .icon {
   display: none; }
+
+.navbar {
+  top: 0; }
+  .navbar li {
+    color: #313632; }
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -269,7 +247,7 @@ input[type="text"],
 select,
 textarea {
   border: none;
-  background-color: #eaf1e3;
+  background-color: #e7dbd4;
   padding: 15px;
   width: 100%;
   border-bottom: 2px solid #dd481d;
@@ -278,9 +256,10 @@ textarea {
   font-size: 18px; }
 
 input[type="submit"] {
+  border-radius: 50px;
+  padding: 10px 38px 14px 38px;
   background-color: #dd481d;
-  color: #eaf1e3;
-  padding: 12px 20px;
+  color: #e7dbd4;
   border: none;
   cursor: pointer;
   font-family: "Manrope", sans-serif; }
@@ -294,8 +273,31 @@ input[type="submit"] {
   width: auto;
   align-items: center; }
 
+.grid-overview {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 10px;
+  margin: 180px 80px 0px 80px; }
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 4; }
+
+.div2 {
+  grid-area: 1 / 4 / 2 / 5; }
+
+.div3 {
+  grid-area: 1 / 5 / 2 / 6; }
+
+.div4 {
+  grid-area: 2 / 4 / 3 / 5; }
+
+.div5 {
+  grid-area: 2 / 5 / 3 / 6; }
+
 body {
-  background-color: #eaf1e3;
+  background-color: #e7dbd4;
   color: #313632;
   display: flex;
   flex-direction: column;
@@ -303,17 +305,17 @@ body {
   font-size: 21px;
   padding: 0px; }
 
-section {
-  margin-top: 80px; }
-
 .left {
   text-align: left; }
 
 .right {
   text-align: right; }
 
+.vw50 {
+  width: 50vw; }
+
 .banner-principal {
-  padding: 100px 50px 100px 50px;
+  padding: 0px 80px 100px 80px;
   max-width: 100vw;
   height: 100vh;
   background-position: center;
@@ -328,7 +330,7 @@ section {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px; }
+  padding: 4px 0px; }
 
 .description {
   padding: 150px 0px 150px 0px;
@@ -336,22 +338,27 @@ section {
   margin: auto;
   width: 70vw; }
 
+.inner-content {
+  margin: 100px 80px 0px 80px; }
+
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 33%;
+  max-width: 33%;
   padding: 0 4px; }
   .column img {
-    padding-top: 8px;
     vertical-align: middle;
     width: 100%; }
 
 img {
+  z-index: -1;
+  margin-top: 8px;
   width: 100%; }
 
 /*Image overlay*/
 .container {
-  position: relative; }
+  position: relative;
+  padding: 0%; }
   .container:hover .overlay {
     opacity: 1; }
 
@@ -360,7 +367,7 @@ img {
 
 .overlay {
   position: absolute;
-  top: 0;
+  top: 0px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -371,10 +378,11 @@ img {
   background-color: #dd481d;
   margin-top: 0px;
   font-family: "Dela Gothic One", sans-serif;
+  font-size: 6vh;
   line-height: 1.6rem; }
 
 .text {
-  color: #eaf1e3;
+  color: #e7dbd4;
   font-family: inherit;
   font-size: 20px;
   position: absolute;
@@ -385,15 +393,25 @@ img {
 
 /*Ids */
 #gallery {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 #imagen-principal img {
-  height: 90vh;
-  width: auto; }
+  width: auto;
+  height: 85vh;
+  position: relative; }
 
 #services {
   background-color: #dd481d;
   padding: 50px; }
+
+#lab-section {
+  background-color: #ffffff;
+  color: #313632; }
+  #lab-section #gallery {
+    margin-left: 80px;
+    margin-right: 80px; }
 
 .flex-space-between {
   display: flex;
@@ -421,7 +439,18 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: baseline; }
+
+.flex-overview {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  padding: 20px 50px 100px 50px; }
+  .flex-overview h3 {
+    padding: 20px 0px 0px 0px; }
 
 .flex-about {
   display: flex;
@@ -430,19 +459,48 @@ img {
   justify-content: space-around;
   align-items: flex-start;
   height: 100%;
-  padding: 100px 50px 100px 50px; }
+  padding: 20px 50px 100px 50px; }
   .flex-about div {
-    width: 700px;
+    width: 40vw;
     padding: 50px 0px; }
   .flex-about img {
     border-radius: 50px;
-    right: 0px; }
+    right: 0;
+    width: 100%;
+    left: auto; }
 
-.card {
-  color: #eaf1e3;
-  background-color: #dd481d;
-  padding: 50px;
-  margin: 15px; }
+.textbox {
+  padding: 10px 0px 40px 0px;
+  text-align: center;
+  margin: auto;
+  width: 70vw;
+  z-index: 5; }
+  .textbox span {
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1.5px;
+    padding: 10px 38px 14px 38px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 0px;
+    line-height: 55px; }
+    a .textbox span:active {
+      background-color: #dd481d;
+      color: #e7dbd4; }
+  .textbox h2 {
+    padding: 80px 50px 20px 50px; }
+
+.boton {
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1.5px;
+  padding: 10px 38px 14px 38px;
+  color: #dd481d; }
+  a .boton:active {
+    background-color: #dd481d;
+    color: #e7dbd4; }
+  .boton:hover {
+    color: #313632; }
 
 /*Animation*/
 @keyframes aparecer {
@@ -451,7 +509,7 @@ img {
   100% {
     opacity: 1; } }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout  */
 @media screen and (max-width: 768px) {
   .column {
     flex: 100%;
@@ -462,13 +520,36 @@ img {
     line-height: 30px;
     padding-bottom: 12px;
     font-weight: 200; }
+  .textbox h2 {
+    padding-top: 60px; }
   .banner-principal {
-    padding: 15px 50px 100px 50px;
-    max-width: 100vw; }
+    padding: 50px 30px 50px 30px;
+    max-width: 100vw;
+    height: auto; }
   #imagen-principal img {
-    width: 100%;
     height: auto;
+    width: 100vw;
+    z-index: -1;
     position: relative; }
+  .flex-space-between {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    text-align: center; }
+  .flex-about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+    padding: 20px 50px 100px 50px;
+    text-align: center; }
+    .flex-about div {
+      width: 80vw; }
   .grid-container .flex-space-between {
     display: flex;
     flex-wrap: wrap;
@@ -480,5 +561,32 @@ img {
     column-gap: 0px;
     grid-template-columns: 1fr;
     width: auto; }
-  .grid-container p {
-    text-align: center; } }
+    .grid-container p {
+      text-align: center; }
+  .navbar {
+    background-color: #e7dbd4; }
+    .navbar ul {
+      height: 100vh; }
+    .navbar li {
+      border-bottom: 1px;
+      border-color: #dd481d; }
+  .grid-overview {
+    text-align: center;
+    margin: 80px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    grid-template-areas: 'div1' 'div2' 'div3' 'div4' 'div5'; }
+  .div1 {
+    grid-area: div1; }
+  .div2 {
+    grid-area: div2; }
+  .div3 {
+    grid-area: div3; }
+  .div4 {
+    grid-area: div4; }
+  .div5 {
+    grid-area: div5; }
+  .inner-content {
+    margin: 100px 50px 0px 50px; } }
